@@ -16,6 +16,3 @@ Runs the app in the development mode with mock configurations
 
 ### `yarn start:local`
 Runs the app in the development mode with local configurations
-
-### `yarn debug`
-Runs the app in the debug mode with development configurations
