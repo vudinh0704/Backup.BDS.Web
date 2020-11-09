@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "env-cmd -f .env.dev nodemon --inspect app.js",
     "start": "env-cmd -f .env.dev nodemon app.js",
     "start:local": "env-cmd -f .env.local nodemon app.js",
     "start:mock": "env-cmd -f .env.mock nodemon app.js"

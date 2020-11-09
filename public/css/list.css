@@ -1,0 +1,190 @@
+/* ====================> Start - News list <==================== */
+.news-list__breadcrumbs ol {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.news-list__crumb {
+    font-size: 13px;
+    line-height: 150%;
+    color: #657786;
+    padding-right: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.news-list__crumb--arrow {
+    min-width: 13px;
+}
+
+.news-list__crumb:last-child {
+    font-weight: 600;
+}
+
+.news-list__header {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3C4146;
+    margin: 24px auto 3.5px 0;
+}
+
+.news-list__analysis {
+    display: flex;
+    justify-content: space-between;
+    color: #657786;
+    margin-bottom: 16px;
+}
+
+.news-list__count {
+    margin: 0;
+    padding-top: 4.5px;
+    line-height: 24px;
+    color: #657786;
+}
+
+.news-list__dropDown {
+    position: relative;
+}
+
+.news-list__dropDown-onClick {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* z-index: 999; */
+    width: 117px;
+    height: 34px;
+    background-color: transparent;
+}
+
+.news-list__filter {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    color: inherit;
+    font-family: Segoe UI;
+    font-size: 17.5px;
+    font-weight: 600;
+    width: 117px;
+    height: 34px;
+    margin: 0;
+    padding: 0 9px;
+    background: #F7F8F9;
+    border: 1px solid #D0D6E0;
+    border-radius: 8px;
+}
+
+.news-list__filter i {
+    margin-top: 0.6rem;
+    /* margin-left: 4px; */
+}
+
+.news-list__dropDownList {
+    display: none;
+    position: absolute;
+    top: 34px;
+    width: 117px;
+    height: 108px;
+    line-height: 24px;
+    padding: 6px 12px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 16px rgba(60, 91, 104, 0.2);
+    border-radius: 8px;
+    /* z-index: 9; */
+}
+
+.news-list__dropDownList--show {
+    display: inherit !important;
+}
+
+.news-list__dropDownList p {
+    cursor: pointer;
+    color: #3C4146;
+    margin: 0;
+}
+
+.news-list__dropDownList p:hover {
+    color: #1877F2;
+}
+
+.news-list__dropDownList p:nth-child(2) {
+    padding: 12px 0;
+}
+
+.news-list__latest-news {
+    font-size: 13px;
+    line-height: 24px;
+    padding: 4.5px 0;
+    margin: 0;
+}
+
+.news-list__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-list__pagination {
+    display: flex;
+    justify-content: center;
+    color: #3C4146;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.news-list__arrows {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.news-list__arrows i {
+    cursor: pointer;
+}
+
+.news-list__pagination ul {
+    display: flex;
+    justify-content: center;
+    /* padding: 0 35px; */
+    padding: 0 35px 0 0;
+}
+
+.news-list__page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+}
+
+.news-list__page--desktop {
+    display: none;
+}
+
+.news-list__page--active {
+    color: #FFF !important;
+    background: #1877F2;
+    border-radius: 4px;
+}
+
+.news-list__page-link {
+    color: inherit;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/* ***** Media query ***** */
+/* For tablets */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* For desktops */
+@media only screen and (min-width: 769px) {
+    .news-list__page--desktop {
+        display: inherit;
+    }
+} /* ====================> End - Latest real estate <==================== */

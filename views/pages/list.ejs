@@ -6,11 +6,548 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <%- include('../partials/head', { head: head }); %>
 
+    <!-- CSS -->
     <link href="css/common.css" rel="stylesheet">
     <link href="css/list.css" rel="stylesheet">
+    <link href="css/partials/compRealEstate.css" rel="stylesheet">
+
+    <!-- boxIcons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     List page
+
+    <!-- ====================> Start - News list <==================== -->
+    <div class="news-list">
+        <section class="news-list__breadcrumbs">
+            <ol>
+                <li class="news-list__crumb">Mua bán nhà đất</li>
+                <li class="news-list__crumb news-list__crumb--arrow">></li>
+                <li class="news-list__crumb">TP. HCM</li>
+                <li class="news-list__crumb news-list__crumb--arrow">></li>
+                <li class="news-list__crumb">Bán nhà mặt tiền, phố Quận 1</li>
+            </ol>
+        </section>
+
+        <p class="news-list__header">Mua Bán Nhà Đất tại Việt Nam</p>
+
+        <section class="news-list__analysis">
+            <p class="news-list__count">Có 164.131 kết quả</p>
+
+            <div class="news-list__dropDown">
+                <div class="news-list__dropDown-onClick"></div>
+
+                <button class="news-list__filter">
+                    <i class='bx bx-sort-down'></i>
+                    <p class="news-list__latest-news">Tin mới nhất</p>
+                </button>
+
+                <div class="news-list__dropDownList">
+                    <p>Tin mới nhất</p>
+                    <p>Giá thấp nhất</p>
+                    <p>Giá cao nhất</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-list__gallery">
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-001.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-002.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-003.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-004.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-005.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-006.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-007.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-008.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-009.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-010.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-011.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-012.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-013.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-014.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-015.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-016.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+        </section>
+
+        <section class="news-list__pagination">
+            <!-- <div class="news-list__arrows">
+                <i class='bx bx-chevrons-left news-list__arrow-first'></i>
+                <i class='bx bx-chevron-left  news-list__arrow-back'></i>
+            </div> -->
+
+            <ul>
+                <li class="news-list__page news-list__page--active"><a class="news-list__page-link" href="#">1</a></li>
+                <li class="news-list__page"><a class="news-list__page-link" href="#">2</a></li>
+                <li class="news-list__page"><a class="news-list__page-link" href="#">3</a></li>
+                <li class="news-list__page"><a class="news-list__page-link" href="#">4</a></li>
+                <li class="news-list__page"><a class="news-list__page-link" href="#">5</a></li>
+                <li class="news-list__page"><a class="news-list__page-link" href="#">6</a></li>
+                <li class="news-list__page"><a class="news-list__page-link" href="#">7</a></li>
+                <li class="news-list__page news-list__page--desktop"><a class="news-list__page-link" href="#">8</a></li>
+                <li class="news-list__page news-list__page--desktop"><a class="news-list__page-link" href="#">9</a></li>
+                <li class="news-list__page news-list__page--desktop"><a class="news-list__page-link" href="#">10</a></li>
+            </ul>
+
+            <div class="news-list__arrows">
+                <i class='bx bx-chevron-right news-list__arrow-next'></i>
+                <!-- <i class='bx bx-chevrons-right news-list__arrow-last'></i> -->
+            </div>
+        </section>
+    </div> <!-- ====================> End - News list <==================== -->
+
     <%- include('../partials/footer'); %>
+
+    <script>
+        (function dropDown() {
+            window.onclick = function(event) {
+                var onClick = event.target;
+                var dropDownLists = document.getElementsByClassName('news-list__dropDownList');
+
+                for (var i = 0; i < dropDownLists.length; i++) {
+                    dropDownLists[i].className = dropDownLists[i].className.replace(' news-list__dropDownList--show', '');
+                }
+
+                if (onClick.matches('.news-list__dropDown-onClick')) {
+                    var dropDownList = onClick.parentElement.getElementsByClassName('news-list__dropDownList')[0];
+
+                    dropDownList.className += " news-list__dropDownList--show";
+                }
+            }
+        })();
+
+        (function paginate() {
+            var arrowFirst = document.getElementsByClassName("news-list__arrow-first")[0];
+            var arrowBack = document.getElementsByClassName("news-list__arrow-back")[0];
+            var arrowLast = document.getElementsByClassName("news-list__arrow-last")[0];
+            var arrowNext = document.getElementsByClassName("news-list__arrow-next")[0];
+            var newsListPages = document.getElementsByClassName("news-list__page");
+
+            for (var i = 0; i < newsListPages.length; i++) {
+                newsListPages[i].addEventListener("click", function() {
+                    var currentActive = document.getElementsByClassName("news-list__page--active")[0];
+
+                    currentActive.className = currentActive.className.replace("news-list__page--active", "");
+                    this.className += " news-list__page--active";
+                });
+            }
+
+            // arrowFirst.addEventListener("click", function() {
+            //     var pages = document.getElementsByClassName("news-list__page");
+            //     var currentActive = document.getElementsByClassName("news-list__page--active")[0];
+            //     var currentPage = currentActive.getElementsByTagName("a")[0].innerHTML;
+
+            //     if (currentPage !== 1) {
+            //         currentActive.className = currentActive.className.replace("news-list__page--active", "");
+            //         pages[0].className += " news-list__page--active";
+            //     }
+            // });
+
+            // arrowBack.addEventListener("click", function() {
+            //     var pages = document.getElementsByClassName("news-list__page");
+            //     var currentActive = document.getElementsByClassName("news-list__page--active")[0];
+            //     var currentPage = currentActive.getElementsByTagName("a")[0].innerHTML;
+            //     var currentIndex = currentPage - 1;
+
+            //     if (currentIndex > 0) {
+            //         currentActive.className = currentActive.className.replace("news-list__page--active", "");
+            //         pages[currentIndex - 1].className += " news-list__page--active";
+            //     }
+            // });
+
+            // arrowLast.addEventListener("click", function() {
+            //     var pages = document.getElementsByClassName("news-list__page");
+            //     var currentActive = document.getElementsByClassName("news-list__page--active")[0];
+            //     var currentPage = currentActive.getElementsByTagName("a")[0].innerHTML;
+
+            //     if (currentPage !== pages.length) {
+            //         currentActive.className = currentActive.className.replace("news-list__page--active", "");
+            //         pages[pages.length - 1].className += " news-list__page--active";
+            //     }
+            // });
+
+            arrowNext.addEventListener("click", function() {
+                var pages = document.getElementsByClassName("news-list__page");
+                var currentActive = document.getElementsByClassName("news-list__page--active")[0];
+                var currentPage = currentActive.getElementsByTagName("a")[0].innerHTML;
+                var currentIndex = currentPage - 1;
+
+                if (currentIndex < pages.length - 1) {
+                    console.log("a");
+                    currentActive.className = currentActive.className.replace("news-list__page--active", "");
+                    pages[currentIndex + 1].className += " news-list__page--active";
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
