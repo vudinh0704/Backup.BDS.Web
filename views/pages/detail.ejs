@@ -6,11 +6,413 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <%- include('../partials/head', { head: head }); %>
 
-    <link href="css/common.css" rel="stylesheet">
-    <link href="css/detail.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="/css/common.css" rel="stylesheet">
+    <link href="/css/detail.css" rel="stylesheet">
+    <link href="/css/partials/compRealEstate.css" rel="stylesheet">
+
+    <!-- boxIcons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     ClassifiedId = <%= classifiedId %>
+
+    <!-- ====================> Start - News list <==================== -->
+    <div class="similar-real-estate">
+        <p class="similar-real-estate__header">
+            Bất động sản tương tự
+        </p>
+
+        <section class="similar-real-estate__gallery">
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-001.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-002.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-003.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-004.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-005.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-006.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-007.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-008.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-009.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-010.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-011.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-012.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-013.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-014.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-015.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+
+            <div class="comp-real-estate">
+                <div class="comp-real-estate__img">
+                    <img src="/images/latest-real-estate-016.jfif" alt="">
+
+                    <div class="comp-real-estate__collection">
+                        <i class="bx bx-image"></i>
+                        <p>10</p>
+                    </div>
+                </div>
+
+                <div style="height: 55px">
+                    <p class="comp-real-estate__title">
+                        Xuất cảnh cần bán gấp nhà 1 lầu mặt tiền đường số 49 P.Bình Thành, Quận 3, TP.HCM
+                    </p>
+                </div>
+
+                <p class="comp-real-estate__price">
+                    <span>4 tỷ 750 triệu</span>
+                    <span>·</span>
+                    <span>75 m²</span>
+                </p>
+                <p class="comp-real-estate__location">Quận 3, TP.HCM</p>
+            </div>
+        </section>
+    </div> <!-- ====================> End - News list <==================== -->
+
     <%- include('../partials/footer'); %>
 </body>
 </html>

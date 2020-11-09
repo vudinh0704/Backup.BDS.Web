@@ -1,0 +1,23 @@
+/* ====================> Start - Similar real estate <==================== */
+.similar-real-estate {
+    margin-bottom: 52px;
+}
+
+.similar-real-estate__gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.similar-real-estate__header {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3C4146;
+    margin: 0 0 4px 0;
+}
+
+/* Media queries */
+
+
+/* ====================> Start - Similar real estate <==================== */

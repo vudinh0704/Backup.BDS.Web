@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 a {
@@ -11,8 +12,12 @@ a:hover, a:visited:hover {
     text-decoration: none;
 }
 
+ul, ol {
+    list-style-type: none;
+}
+
 body {
-    font-family: Arial;
+    font-family: Segoe UI;
     font-size: 15px;
     margin: 0;
     padding: 0 16px 0 16px;
